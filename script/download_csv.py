@@ -42,17 +42,14 @@ def getConsulta(session, url):
 
 	data_consulta = descricao_splited[6].split(":", 1)[1].strip()
 
-	e = Estacao(desc_name, desc_lat, desc_lng, desc_alt, desc_sit, desc_op_date)
+	estacao_atual = Estacao(desc_name, desc_lat, desc_lng, desc_alt, desc_sit, desc_op_date)
 	
 	dados = text_splited[4]
 	dados.replace(";", ",")
 	dados_splited = dados.split("\n")
 	dados_splited = dados_splited[1:(len(dados_splited)-1)]
 
-	#for linha in descricao_splited:
-	#	print "%s" % linha
-
-	print e
+	print estacao_atual
 
 	print "\n"
 
@@ -106,10 +103,6 @@ def login(session):
 		#grava a nova cookie no arquivo
 		setCookieFile(cookie_file, session.cookies.get_dict())
 		return True
-
-
-	
-
 		
 	return False
 
