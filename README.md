@@ -18,5 +18,5 @@ Esse projeto tem o objetivo de criar uma interface para capturar os dados da bas
 
 ## Afazer
 * Lista das estações: http://www.inmet.gov.br/projetos/rede/pesquisa/lista_estacao.php -> Pegar o id delas para sar como parametro de consulta
-* Fazer logica do session cookie: Salvar a cookie em um arquivo. Ao executar o script, usar a cookie do arquivo. Se a cookie nao for mais valida, ai sim pede o usuario e a senha
+* Futuramente verificar se digitou a senha certa analisando, e voltar para pedir novamente
 * Separar as classes em outros arquivos posteriormente 

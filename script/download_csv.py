@@ -59,13 +59,18 @@ def getConsulta(session, url):
 	print "Total: %d" % (len(dados_splited))
 
 def getCookieFile(file_name):
-	f = open(file_name)
-	cookie = f.readline()
-	if len(cookie) > 0:
-		cookie = ast.literal_eval(cookie)
-	else:
+	try:
+		f = open(file_name)
+		cookie = f.readline()
+		if len(cookie) > 0:
+			cookie = ast.literal_eval(cookie)
+		else:
+			cookie = {}
+		f.close()
+	except IOError:
 		cookie = {}
-	f.close()
+		print "** ERROR: Erro ao abrir o arquivo %s **" % (file_name)
+
 	return cookie
 
 def setCookieFile(file_name, cookie):
@@ -103,7 +108,10 @@ def login(session):
 		#grava a nova cookie no arquivo
 		setCookieFile(cookie_file, session.cookies.get_dict())
 		return True
-		
+	
+
+	print "\n Não foi possivel efetuar o Login. Tenha certeza de que o Usuário e senha estão corretos"
+	
 	return False
 
 
