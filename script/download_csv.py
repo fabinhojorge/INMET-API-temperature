@@ -78,7 +78,6 @@ def setCookieFile(file_name, cookie):
 	f.write(cookie.__str__())
 	f.close()
 
-
 def checkSessionCookie(session):
 	#URL de checagem para ver se esta logado
 	url = 'http://www.inmet.gov.br/projetos/rede/pesquisa/mapas_mensal_sem.php'
@@ -109,9 +108,8 @@ def login(session):
 		setCookieFile(cookie_file, session.cookies.get_dict())
 		return True
 	
-
 	print "\n Não foi possivel efetuar o Login. Tenha certeza de que o Usuário e senha estão corretos"
-	
+
 	return False
 
 
