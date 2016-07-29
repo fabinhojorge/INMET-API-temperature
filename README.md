@@ -50,6 +50,6 @@ Esse projeto tem o objetivo de criar uma interface para capturar os dados da bas
 
 
 ## Afazer
-* Lista das estações: http://www.inmet.gov.br/projetos/rede/pesquisa/lista_estacao.php -> Pegar o id delas para sar como parametro de consulta
+* Lista das estações: http://www.inmet.gov.br/projetos/rede/pesquisa/lista_estacao.php -> Pegar o id delas para usar como parametro de consulta
 * Futuramente verificar se digitou a senha certa analisando, e voltar para pedir novamente
 * Separar as classes em outros arquivos posteriormente 

@@ -25,6 +25,22 @@ class Estacao:
 		"Em operação desde "+self.op_date
 		return s
 
+def exportFileCSV(dados, file_name):
+
+	try:
+		f = open(file_name, "w")
+		
+		for i in range(len(dados)):
+			f.write(dados[i]+"\n")
+
+		f.close()
+	except IOError:
+		cookie = {}
+		print "** ERROR: Erro ao abrir o arquivo %s **" % (file_name)
+		return False
+
+	return True
+
 def getConsulta(session, url):
 	response = session.get(url)
 
@@ -33,19 +49,19 @@ def getConsulta(session, url):
 	descricao = text_splited[2]
 	descricao_splited = descricao.split("\n")
 	descricao_splited = descricao_splited[1:(len(descricao_splited)-1)]
+	
 	desc_name = descricao_splited[0].split(":", 1)[1].strip()
 	desc_lat = descricao_splited[1].split(":", 1)[1].strip()
 	desc_lng = descricao_splited[2].split(":", 1)[1].strip()
 	desc_alt = descricao_splited[3].split(":", 1)[1].strip()
 	desc_sit = descricao_splited[4].split(" ")[1].strip()
 	desc_op_date = descricao_splited[5].split(":", 1)[1].strip()
-
 	data_consulta = descricao_splited[6].split(":", 1)[1].strip()
 
 	estacao_atual = Estacao(desc_name, desc_lat, desc_lng, desc_alt, desc_sit, desc_op_date)
 	
 	dados = text_splited[4]
-	dados.replace(";", ",")
+	dados = dados.replace(";", ",")
 	dados_splited = dados.split("\n")
 	dados_splited = dados_splited[1:(len(dados_splited)-1)]
 
@@ -53,10 +69,15 @@ def getConsulta(session, url):
 
 	print "\n"
 
-	for linha in dados_splited:
-		print "%s" % linha
+	for i in range(len(dados_splited)):
+		dados_splited[i] = dados_splited[i][1:len(dados_splited[i])-1]
+		print "%s" % dados_splited[i]
 
 	print "Total: %d" % (len(dados_splited))
+
+	file_name = raw_input("Informe o nome do arquivo para exportação [Deixe em branco se não quer exportar]:")
+	if(len(file_name)>0):
+		exportFileCSV(dados_splited, file_name)
 
 def getCookieFile(file_name):
 	try:
@@ -115,6 +136,7 @@ def login(session):
 
 def main():
 
+	
 	session = requests.Session()
 	
 	logado = login(session)
