@@ -1,0 +1,238 @@
+codigo_omm,station_name,state,state_initials,region,latitude,longitude,altitude,altitude_type,start_operation_date,station_situation,data_situation
+82989,AGUA BRANCA,Alagoas,AL,Nosdeste,-9.28,-37.9,605.34,meters,1928-05-05,operante,operante
+83249,ALAGOINHAS,Bahia,BA,Nordeste,-12.14,-38.42,130.92,meters,1931-01-01,operante,operante
+82353,ALTAMIRA,Para,PA,Norte,-3.21,-52.21,74.04,meters,1927-04-24,operante,operante
+82970,ALTO PARNAIBA,Maranhao,MA,Nordeste,-9.1,-45.93,285.05,meters,1976-08-21,operante,operante
+82590,APODI,Rio_Grande_do_Norte,RN,Nordeste,-5.61,-37.81,150.00,meters,1962-12-18,operante,operante
+83096,ARACAJU,Sergipe,SE,Nordeste,-10.95,-37.04,4.72,meters,1910-03-01,operante,operante
+83442,ARACUAI,Minas_Gerais,MG,Sudeste,-16.83,-42.05,289.00,meters,1918-09-06,operante,operante
+83368,ARAGARCAS,Goias,GO,Centro-Oeste,-15.9,-52.23,345.00,meters,1970-07-19,operante,operante
+82659,ARAGUAINA,Tocantins,TO,Norte,-7.2,-48.2,228.52,meters,1984-08-21,operante,operante
+83579,ARAXA,Minas_Gerais,MG,Sudeste,-19.6,-46.94,1023.61,meters,1916-09-07,operante,operante
+82890,ARCOVERDE,Pernambuco,PE,Nordeste,-8.41,-37.08,680.70,meters,1973-02-01,operante,operante
+82696,AREIA,Paraiba,PB,Nordeste,-6.97,-35.68,574.62,meters,1929-01-01,operante,operante
+83384,ARINOS,Minas_Gerais,MG,Sudeste,-15.91,-46.1,519.00,meters,1976-04-05,operante,operante
+83049,AVELAR  P DO ALFERES,Rio_de_Janeiro,RJ,Sudeste,-22.35,-43.41,507.00,meters,1971-04-01,operante,operante
+82460,BACABAL,Maranhao,MA,Nordeste,-4.21,-44.76,25.07,meters,1976-08-15,operante,operante
+83980,BAGE,Rio_Grande_do_Sul,RS,Sul,-31.33,-54.1,242.31,meters,1912-01-01,operante,operante
+82768,BALSAS,Maranhao,MA,Nordeste,-7.53,-46.03,259.38,meters,1976-08-14,operante,operante
+83582,BAMBUI,Minas_Gerais,MG,Sudeste,-20.03,-45,661.27,meters,1926-08-26,operante,operante
+83689,BARBACENA,Minas_Gerais,MG,Sudeste,-21.25,-43.76,1126.00,meters,1914-06-09,operante,operante
+82784,BARBALHA,Ceara,CE,Nordeste,-7.31,-39.3,409.03,meters,1948-01-01,operante,operante
+82113,BARCELOS,Amazonas,AM,Norte,-0.96,-62.91,40.00,meters,1924-08-01,operante,operante
+83179,BARRA,Bahia,BA,Nordeste,-11.08,-43.16,401.58,meters,1925-03-03,operante,operante
+82571,BARRA DO CORDA,Maranhao,MA,Nordeste,-5.5,-45.23,153.00,meters,1912-01-14,operante,operante
+83236,BARREIRAS,Bahia,BA,Nordeste,-12.15,-45,439.29,meters,1924-01-01,operante,operante
+82191,BELEM,Para,PA,Norte,-1.43,-48.43,10.00,meters,1923-11-01,operante,operante
+83587,BELO HORIZONTE,Minas_Gerais,MG,Sudeste,-19.93,-43.93,915.00,meters,1910-03-03,operante,operante
+82246,BELTERRA,Para,PA,Norte,-2.63,-54.95,175.74,meters,1971-08-01,operante,operante
+82410,BENJAMIN CONSTANT,Amazonas,AM,Norte,-4.38,-70.03,65.00,meters,1924-01-01,operante,operante
+82024,BOA VISTA,Roraima,RR,Norte,2.82,-60.66,83.00,meters,1923-01-01,operante,operante
+83533,BOM DESPACHO,Minas_Gerais,MG,Sudeste,-19.68,-45.36,695.00,meters,1981-01-01,operante,operante
+83919,BOM JESUS,Rio_Grande_do_Sul,RS,Sul,-28.66,-50.43,1047.50,meters,1948-05-01,operante,operante
+83288,BOM JESUS DA LAPA,Bahia,BA,Nordeste,-13.26,-43.41,439.96,meters,1941-11-01,operante,operante
+82975,BOM JESUS DO PIAUI,Piaui,PI,Nordeste,-9.1,-44.11,331.74,meters,1971-04-19,operante,operante
+83377,BRASILIA,Distrito_Federal,DF,Centro-Oeste,-15.78,-47.92,1159.54,meters,1961-09-12,operante,operante
+82188,BREVES,Para,PA,Norte,-1.68,-50.48,14.74,meters,1970-09-01,operante,operante
+83589,C  DO MATO DENTRO,Minas_Gerais,MG,Sudeste,-19.02,-43.43,652.00,meters,1925-06-30,operante,operante
+82886,CABROBO,Pernambuco,PE,Nordeste,-8.51,-39.33,341.46,meters,1927-10-17,operante,operante
+83339,CAETITE,Bahia,BA,Nordeste,-14.06,-42.48,882.47,meters,1907-01-01,operante,operante
+82263,CAMETA,Para,PA,Norte,-2.25,-49.5,23.90,meters,1970-05-01,operante,operante
+82795,CAMPINA GRANDE,Paraiba,PB,Nordeste,-7.22,-35.88,547.56,meters,1911-01-01,operante,operante
+83783,CAMPO MOURAO,Parana,PR,Sul,-24.05,-52.36,616.40,meters,1958-04-02,operante,operante
+83698,CAMPOS,Rio_de_Janeiro,RJ,Sudeste,-21.74,-41.33,11.20,meters,1911-06-17,operante,operante
+83714,CAMPOS DO JORDAO,Sao_Paulo,SP,Sudeste,-22.75,-45.6,1642.00,meters,1939-01-01,operante,operante
+83887,CAMPOS NOVOS,Santa_Catarina,SC,Sul,-27.38,-51.2,946.67,meters,1923-07-01,operante,operante
+82777,CAMPOS SALES,Ceara,CE,Nordeste,-7,-40.38,583.50,meters,1960-06-01,operante,operante
+83270,CANARANA,Mato_Grosso,MT,Centro-Oeste,-13.47,-52.27,430.00,meters,1987-08-04,operante,operante
+83398,CANAVIEIRAS,Bahia,BA,Nordeste,-15.66,-38.95,3.87,meters,1930-01-01,operante,operante
+83639,CAPARAO,Minas_Gerais,MG,Sudeste,-20.51,-41.9,843.18,meters,1972-11-17,operante,operante
+83514,CAPINOPOLIS,Minas_Gerais,MG,Sudeste,-18.71,-49.55,620.60,meters,1969-08-13,operante,operante
+82042,CARACARAI,Roraima,RR,Norte,1.83,-61.12,60.00,meters,1970-01-11,operante,operante
+82976,CARACOL,Piaui,PI,Nordeste,-9.28,-43.33,522.77,meters,1975-10-03,operante,operante
+83592,CARATINGA,Minas_Gerais,MG,Sudeste,-19.73,-42.13,609.65,meters,1924-03-15,operante,operante
+83498,CARAVELAS,Bahia,BA,Nordeste,-17.73,-39.25,2.88,meters,1930-05-01,operante,operante
+83485,CARBONITA,Minas_Gerais,MG,Sudeste,-17.53,-43,736.38,meters,1981-01-01,operante,operante
+83408,CARINHANHA,Bahia,BA,Nordeste,-14.28,-43.76,450.18,meters,1927-12-01,operante,operante
+82765,CAROLINA,Maranhao,MA,Nordeste,-7.33,-47.46,192.83,meters,1913-01-01,operante,operante
+83813,CASTRO,Parana,PR,Sul,-24.78,-50,1008.80,meters,1922-11-01,operante,operante
+83526,CATALAO,Goias,GO,Centro-Oeste,-18.18,-47.95,840.47,meters,1913-01-01,operante,operante
+83676,CATANDUVA,Sao_Paulo,SP,Sudeste,-21.11,-48.93,570.00,meters,1936-08-01,operante,operante
+82476,CAXIAS,Maranhao,MA,Nordeste,-4.86,-43.35,103.56,meters,1976-03-15,operante,operante
+83942,CAXIAS DO SUL,Rio_Grande_do_Sul,RS,Sul,-29.16,-51.2,759.60,meters,1912-04-12,operante,operante
+82596,CEARA MIRIM,Rio_Grande_do_Norte,RN,Nordeste,-5.65,-35.65,61.35,meters,1967-06-01,operante,operante
+82382,CHAPADINHA,Maranhao,MA,Nordeste,-3.73,-43.35,103.50,meters,1976-08-28,operante,operante
+83883,CHAPECO,Santa_Catarina,SC,Sul,-27.11,-52.61,679.01,meters,1973-05-10,operante,operante
+83192,CIPO,Bahia,BA,Nordeste,-11.08,-38.51,145.31,meters,1935-01-01,operante,operante
+82425,COARI,Amazonas,AM,Norte,-4.08,-63.13,46.00,meters,1926-01-01,operante,operante
+82326,CODAJAS,Amazonas,AM,Norte,-3.83,-62.08,48.00,meters,1974-08-19,operante,operante
+82676,COLINAS,Maranhao,MA,Nordeste,-6.03,-44.25,179.75,meters,1976-05-19,operante,operante
+82861,CONCEICAO DO ARAGUAIA,Para,PA,Norte,-8.26,-49.26,156.85,meters,1920-03-19,operante,operante
+83718,CORDEIRO,Rio_de_Janeiro,RJ,Sudeste,-22.02,-42.36,505.92,meters,1971-07-16,operante,operante
+83286,CORRENTINA,Bahia,BA,Nordeste,-13.33,-44.61,549.47,meters,1975-08-11,operante,operante
+82583,CRATEUS,Ceara,CE,Nordeste,-5.16,-40.66,296.82,meters,1962-12-01,operante,operante
+83912,CRUZ ALTA,Rio_Grande_do_Sul,RS,Sul,-28.63,-53.6,472.50,meters,1912-02-02,operante,operante
+83222,CRUZ DAS ALMAS,Bahia,BA,Nordeste,-12.66,-39.08,225.87,meters,1958-01-01,operante,operante
+82704,CRUZEIRO DO SUL,Acre,AC,Norte,-7.6,-72.66,170.00,meters,1928-01-01,operante,operante
+82693,CRUZETA,Rio_Grande_do_Norte,RN,Nordeste,-6.43,-36.58,226.46,meters,1930-01-01,operante,operante
+83361,CUIABA,Mato_Grosso,MT,Centro-Oeste,-15.61,-56.1,145.00,meters,1911-01-01,operante,operante
+83842,CURITIBA,Parana,PR,Sul,-25.43,-49.26,923.50,meters,1911-01-01,operante,operante
+83536,CURVELO,Minas_Gerais,MG,Sudeste,-18.75,-44.45,672.00,meters,1912-09-03,operante,operante
+83538,DIAMANTINA,Minas_Gerais,MG,Sudeste,-18.23,-43.64,1296.12,meters,1918-04-13,operante,operante
+83309,DIAMANTINO,Mato_Grosso,MT,Centro-Oeste,-14.4,-56.45,286.30,meters,1932-01-01,operante,operante
+83635,DIVINOPOLIS,Minas_Gerais,MG,Sudeste,-20.17,-44.87,788.35,meters,1995-10-11,operante,operante
+82610,EIRUNEPE,Amazonas,AM,Norte,-6.66,-69.86,104.00,meters,1928-01-01,operante,operante
+83964,ENCRUZILHADA DO SUL,Rio_Grande_do_Sul,RS,Sul,-30.53,-52.51,427.75,meters,1913-05-01,operante,operante
+82298,ESPERANTINA,Piaui,PI,Nordeste,-3.9,-42.25,87.05,meters,1974-03-17,operante,operante
+83338,ESPINOSA,Minas_Gerais,MG,Sudeste,-14.91,-42.8,569.64,meters,1974-03-01,operante,operante
+83221,FEIRA DE SANTANA,Bahia,BA,Nordeste,-12.18,-38.96,230.68,meters,1939-01-01,operante,operante
+82691,FLORANIA,Rio_Grande_do_Norte,RN,Nordeste,-6.11,-36.81,324.45,meters,1962-12-19,operante,operante
+83581,FLORESTAL,Minas_Gerais,MG,Sudeste,-19.88,-44.41,760.00,meters,1960-04-09,operante,operante
+82678,FLORIANO,Piaui,PI,Nordeste,-6.76,-43.01,123.27,meters,1968-01-21,operante,operante
+83897,FLORIANOPOLIS,Santa_Catarina,SC,Sul,-27.58,-48.56,1.84,meters,1921-12-01,operante,operante
+82212,FONTE BOA,Amazonas,AM,Norte,-2.53,-66.16,55.57,meters,1925-01-01,operante,operante
+83379,FORMOSA,Goias,GO,Centro-Oeste,-15.54,-47.33,935.19,meters,1925-01-01,operante,operante
+83334,FORMOSO,Minas_Gerais,MG,Sudeste,-14.93,-46.25,840.00,meters,1976-04-03,operante,operante
+82397,FORTALEZA,Ceara,CE,Nordeste,-3.81,-38.53,26.45,meters,1919-10-27,operante,operante
+83630,FRANCA,Sao_Paulo,SP,Sudeste,-20.58,-47.36,1026.20,meters,1911-01-01,operante,operante
+82893,GARANHUNS,Pernambuco,PE,Nordeste,-8.88,-36.51,822.76,meters,1913-02-01,operante,operante
+83423,GOIANIA,Goias,GO,Centro-Oeste,-16.66,-49.25,741.48,meters,1937-07-11,operante,operante
+83374,GOIAS,Goias,GO,Centro-Oeste,-15.91,-50.13,512.22,meters,1946-04-20,operante,operante
+82487,GUARAMIRANGA,Ceara,CE,Nordeste,-4.28,-39,870.67,meters,1911-02-01,operante,operante
+83446,GUARATINGA,Bahia,BA,Nordeste,-16.73,-39.54,194.67,meters,1973-09-10,operante,operante
+82067,IAUARETE,Amazonas,AM,Norte,0.61,-69.18,120.00,meters,1943-07-16,operante,operante
+83632,IBIRITE,Minas_Gerais,MG,Sudeste,-20.01,-44.05,814.54,meters,1959-04-06,operante,operante
+82686,IGUATU,Ceara,CE,Nordeste,-6.36,-39.29,217.67,meters,1911-01-01,operante,operante
+82564,IMPERATRIZ,Maranhao,MA,Nordeste,-5.53,-47.48,123.30,meters,1913-01-01,operante,operante
+83872,INDAIAL,Santa_Catarina,SC,Sul,-26.9,-49.21,86.13,meters,1970-10-14,operante,operante
+83522,IPAMERI,Goias,GO,Centro-Oeste,-17.71,-48.16,772.99,meters,1977-02-10,operante,operante
+83881,IRAI,Rio_Grande_do_Sul,RS,Sul,-27.18,-53.23,247.10,meters,1935-06-01,operante,operante
+83836,IRATI,Parana,PR,Sul,-25.46,-50.63,836.95,meters,1966-09-24,operante,operante
+83182,IRECE,Bahia,BA,Nordeste,-11.3,-41.86,747.16,meters,1970-12-01,operante,operante
+83195,ITABAIANINHA,Sergipe,SE,Nordeste,-11.11,-37.81,208.00,meters,1923-08-06,operante,operante
+83244,ITABERABA,Bahia,BA,Nordeste,-12.51,-40.28,249.89,meters,1931-08-21,operante,operante
+82336,ITACOATIARA,Amazonas,AM,Norte,-3.13,-58.43,40.00,meters,1927-01-01,operante,operante
+82445,ITAITUBA,Para,PA,Norte,-4.28,-55.98,45.00,meters,1928-01-01,operante,operante
+83488,ITAMARANDIBA,Minas_Gerais,MG,Sudeste,-17.85,-42.85,914.00,meters,1925-03-27,operante,operante
+83695,ITAPERUNA,Rio_de_Janeiro,RJ,Sudeste,-21.2,-41.9,123.59,meters,1922-01-01,operante,operante
+83295,ITIRUCU  JAGUAQUARA,Bahia,BA,Nordeste,-13.35,-40.11,755.61,meters,1941-08-01,operante,operante
+83292,ITUACU,Bahia,BA,Nordeste,-13.81,-41.3,531.43,meters,1973-02-18,operante,operante
+83811,IVAI,Parana,PR,Sul,-25,-50.86,808.00,meters,1912-01-01,operante,operante
+83186,JACOBINA,Bahia,BA,Nordeste,-11.18,-40.46,484.74,meters,1912-12-01,operante,operante
+82493,JAGUARUANA,Ceara,CE,Nordeste,-4.78,-37.76,11.71,meters,1914-01-01,operante,operante
+83395,JANAUBA,Minas_Gerais,MG,Sudeste,-15.8,-43.29,516.00,meters,1975-03-15,operante,operante
+83386,JANUARIA,Minas_Gerais,MG,Sudeste,-15.45,-44,473.71,meters,1912-06-19,operante,operante
+83464,JATAI,Goias,GO,Centro-Oeste,-17.91,-51.71,662.86,meters,1978-11-24,operante,operante
+82798,JOAO PESSOA,Paraiba,PB,Nordeste,-7.1,-34.86,7.43,meters,1912-01-01,operante,operante
+83481,JOAO PINHEIRO,Minas_Gerais,MG,Sudeste,-17.73,-46.17,760.36,meters,1925-12-09,operante,operante
+83692,JUIZ DE FORA,Minas_Gerais,MG,Sudeste,-21.76,-43.36,939.96,meters,1910-01-01,operante,operante
+83452,JURAMENTO,Minas_Gerais,MG,Sudeste,-16.77,-43.66,648.00,meters,1986-11-14,operante,operante
+82723,LABREA,Amazonas,AM,Norte,-7.25,-64.83,61.00,meters,1972-11-30,operante,operante
+83891,LAGES,Santa_Catarina,SC,Sul,-27.81,-50.33,936.83,meters,1914-01-01,operante,operante
+83916,LAGOA VERMELHA,Rio_Grande_do_Sul,RS,Sul,-28.21,-51.5,840.00,meters,1914-06-01,operante,operante
+83687,LAVRAS,Minas_Gerais,MG,Sudeste,-21.75,-45,918.84,meters,1911-02-18,operante,operante
+83242,LENCOIS,Bahia,BA,Nordeste,-12.56,-41.38,438.74,meters,1931-09-01,operante,operante
+83766,LONDRINA,Parana,PR,Sul,-23.31,-51.13,566.00,meters,1953-12-11,operante,operante
+82296,LUZILANDIA LAG DO PIAUI,Piaui,PI,Nordeste,-3.41,-42.28,49.00,meters,1972-05-18,operante,operante
+82098,MACAPA,Amapa,AP,Norte,-0.05,-51.11,14.46,meters,1925-01-01,operante,operante
+82594,MACAU,Rio_Grande_do_Norte,RN,Nordeste,-5.15,-36.57,32.00,meters,1908-11-18,operante,operante
+82994,MACEIO,Alagoas,AL,Nosdeste,-9.66,-35.7,64.50,meters,1909-01-01,operante,operante
+83683,MACHADO,Minas_Gerais,MG,Sudeste,-21.68,-45.94,873.35,meters,1961-09-01,operante,operante
+82331,MANAUS,Amazonas,AM,Norte,-3.1,-60.01,61.25,meters,1910-01-01,operante,operante
+82533,MANICORE,Amazonas,AM,Norte,-5.81,-61.3,50.00,meters,1928-01-01,operante,operante
+82562,MARABA,Para,PA,Norte,-5.36,-49.13,95.00,meters,1952-01-01,operante,operante
+83767,MARINGA,Parana,PR,Sul,-23.4,-51.91,542.00,meters,1953-12-01,operante,operante
+83214,MATUPA,Mato_Grosso,MT,Centro-Oeste,-10.25,-54.91,285.00,meters,1986-12-15,operante,operante
+82181,MONTE ALEGRE,Para,PA,Norte,-2,-54.1,145.85,meters,1974-03-09,operante,operante
+83090,MONTE SANTO,Bahia,BA,Nordeste,-10.43,-39.29,464.60,meters,1913-05-15,operante,operante
+82792,MONTEIRO,Paraiba,PB,Nordeste,-7.88,-37.06,603.66,meters,1940-01-14,operante,operante
+83437,MONTES CLAROS,Minas_Gerais,MG,Sudeste,-16.68,-43.84,652.00,meters,1912-01-01,operante,operante
+82588,MORADA NOVA,Ceara,CE,Nordeste,-5.11,-38.36,43.62,meters,1962-10-01,operante,operante
+83184,MORRO DO CHAPEU,Bahia,BA,Nordeste,-11.21,-41.21,1003.27,meters,1913-01-13,operante,operante
+82598,NATAL,Rio_Grande_do_Norte,RN,Nordeste,-5.91,-35.2,48.60,meters,1911-01-01,operante,operante
+83319,NOVA XAV  XAVANTINA,Mato_Grosso,MT,Centro-Oeste,-14.7,-52.35,316.00,meters,1987-08-05,operante,operante
+82178,OBIDOS,Para,PA,Norte,-1.91,-55.51,37.00,meters,1927-01-01,operante,operante
+82753,OURICURI,Pernambuco,PE,Nordeste,-7.9,-40.04,459.28,meters,1975-09-16,operante,operante
+83364,PADRE RICARDO REMETTER,Mato_Grosso,MT,Centro-Oeste,-15.78,-56.06,140.00,meters,1986-01-01,operante,operante
+83033,PALMAS,Tocantins,TO,Norte,-10.19,-48.3,280.00,meters,1993-10-08,operante,operante
+82992,PALMEIRA DOS INDIOS,Alagoas,AL,Nosdeste,-9.44,-36.7,274.90,meters,1928-01-01,operante,operante
+82990,PAO DE ACUCAR,Alagoas,AL,Nosdeste,-9.75,-37.43,19.10,meters,1927-03-14,operante,operante
+83479,PARACATU,Minas_Gerais,MG,Sudeste,-17.24,-46.88,712.00,meters,1918-05-13,operante,operante
+83844,PARANAGUA,Parana,PR,Sul,-25.53,-48.51,4.50,meters,1911-01-01,operante,operante
+83565,PARANAIBA,Mato_Grosso_do_Sul,MS,Centro-Oeste,-19.75,-51.18,331.25,meters,1971-07-07,operante,operante
+82240,PARINTINS,Amazonas,AM,Norte,-2.63,-56.73,29.00,meters,1912-01-01,operante,operante
+82287,PARNAIBA,Piaui,PI,Nordeste,-3.08,-41.76,79.50,meters,1970-11-16,operante,operante
+83914,PASSO FUNDO,Rio_Grande_do_Sul,RS,Sul,-28.21,-52.4,684.05,meters,1912-08-01,operante,operante
+82791,PATOS,Paraiba,PB,Nordeste,-7.01,-37.26,249.09,meters,1975-10-17,operante,operante
+83531,PATOS DE MINAS,Minas_Gerais,MG,Sudeste,-18.51,-46.43,940.28,meters,1947-10-23,operante,operante
+82882,PAULISTANA,Piaui,PI,Nordeste,-8.13,-41.13,374.22,meters,1975-09-22,operante,operante
+83393,PEDRA AZUL,Minas_Gerais,MG,Sudeste,-16,-41.28,648.91,meters,1918-10-01,operante,operante
+82863,PEDRO AFONSO,Tocantins,TO,Norte,-8.96,-48.18,187.00,meters,1977-03-04,operante,operante
+83228,PEIXE,Tocantins,TO,Norte,-12.01,-48.35,242.49,meters,1975-05-01,operante,operante
+83985,PELOTAS,Rio_Grande_do_Sul,RS,Sul,-31.78,-52.41,13.00,meters,1926-01-01,operante,operante
+82983,PETROLINA,Pernambuco,PE,Nordeste,-9.38,-40.48,370.46,meters,1941-01-01,operante,operante
+82780,PICOS,Piaui,PI,Nordeste,-7.03,-41.48,207.93,meters,1923-11-01,operante,operante
+83483,PIRAPORA,Minas_Gerais,MG,Sudeste,-17.35,-44.91,505.24,meters,1912-12-23,operante,operante
+83376,PIRENOPOLIS,Goias,GO,Centro-Oeste,-15.85,-48.96,740.00,meters,1977-02-17,operante,operante
+82480,PIRIPIRI,Piaui,PI,Nordeste,-4.26,-41.78,161.12,meters,1976-03-09,operante,operante
+83702,PONTA PORA,Mato_Grosso_do_Sul,MS,Centro-Oeste,-22.55,-55.71,650.00,meters,1941-11-24,operante,operante
+83967,PORTO ALEGRE,Rio_Grande_do_Sul,RS,Sul,-30.05,-51.16,46.97,meters,1909-12-09,operante,operante
+82184,PORTO DE MOZ,Para,PA,Norte,-1.73,-52.23,15.93,meters,1928-04-23,operante,operante
+82996,PORTO DE PEDRAS,Alagoas,AL,Nosdeste,-9.18,-35.43,50.02,meters,1927-03-14,operante,operante
+83064,PORTO NACIONAL,Tocantins,TO,Norte,-10.71,-48.41,239.20,meters,1915-01-01,operante,operante
+83332,POSSE,Goias,GO,Centro-Oeste,-14.1,-46.36,825.64,meters,1975-08-04,operante,operante
+83358,POXOREO,Mato_Grosso,MT,Centro-Oeste,-15.83,-54.38,450.00,meters,1978-09-18,operante,operante
+83097,PROPRIA,Sergipe,SE,Nordeste,-10.21,-36.84,19.92,meters,1925-05-10,operante,operante
+82586,QUIXERAMOBIM,Ceara,CE,Nordeste,-5.16,-39.28,79.50,meters,1896-01-01,operante,operante
+82900,RECIFE  CURADO,Pernambuco,PE,Nordeste,-8.05,-34.95,10.00,meters,1961-07-07,operante,operante
+82979,REMANSO,Bahia,BA,Nordeste,-9.63,-42.1,400.51,meters,1927-10-01,operante,operante
+83738,RESENDE,Rio_de_Janeiro,RJ,Sudeste,-22.45,-44.44,439.89,meters,1944-05-22,operante,operante
+82915,RIO BRANCO,Acre,AC,Norte,-9.96,-67.8,160.00,meters,1929-01-01,operante,operante
+83743,RIO DE JANEIRO,Rio_de_Janeiro,RJ,Sudeste,-22.89,-43.18,11.10,meters,1917-01-01,operante,operante
+83470,RIO VERDE,Goias,GO,Centro-Oeste,-17.8,-50.91,774.62,meters,1971-01-01,operante,operante
+83373,RONCADOR,Distrito_Federal,DF,Centro-Oeste,-15.93,-47.88,1100.57,meters,1979-05-28,operante,operante
+83410,RONDONOPOLIS,Mato_Grosso,MT,Centro-Oeste,-16.45,-54.56,284.00,meters,1992-01-01,operante,operante
+82106,S G DA CACHOEIRA UAUPES,Amazonas,AM,Norte,-0.11,-67,90.00,meters,1920-04-01,operante,operante
+82689,SAO GONCALO,Paraiba,PB,Nordeste,-6.75,-38.21,233.06,meters,1938-10-08,operante,operante
+83441,SALINAS,Minas_Gerais,MG,Sudeste,-16.15,-42.28,471.32,meters,1925-03-05,operante,operante
+83229,SALVADOR  ONDINA,Bahia,BA,Nordeste,-13.01,-38.53,51.41,meters,1903-01-01,operante,operante
+83936,SANTA MARIA,Rio_Grande_do_Sul,RS,Sul,-29.7,-53.7,95.00,meters,1912-01-01,operante,operante
+83997,SANTA VITORIA DO PALMAR,Rio_Grande_do_Sul,RS,Sul,-33.51,-53.35,24.01,meters,1912-10-01,operante,operante
+83726,SAO CARLOS,Sao_Paulo,SP,Sudeste,-21.96,-47.86,856.00,meters,1939-09-24,operante,operante
+82668,SAO FELIX DO XINGU,Para,PA,Norte,-6.63,-51.96,206.00,meters,1972-07-07,operante,operante
+82879,SAO JOAO DO PIAUI,Piaui,PI,Nordeste,-8.35,-42.25,235.33,meters,1975-09-30,operante,operante
+83920,SAO JOAQUIM,Santa_Catarina,SC,Sul,-28.3,-49.93,1415.00,meters,1954-08-01,operante,operante
+83267,SAO JOSE DO RIO CLARO,Mato_Grosso,MT,Centro-Oeste,-13.43,-56.71,350.00,meters,1990-03-14,operante,operante
+83736,SAO LOURENCO,Minas_Gerais,MG,Sudeste,-22.1,-45.01,953.20,meters,1922-02-04,operante,operante
+82280,SAO LUIS,Maranhao,MA,Nordeste,-2.53,-44.21,50.86,meters,1924-11-18,operante,operante
+83907,SAO LUIZ GONZAGA,Rio_Grande_do_Sul,RS,Sul,-28.4,-55.01,245.11,meters,1912-04-01,operante,operante
+83550,SAO MATEUS,Esperito_Santo,ES,Sudeste,-18.7,-39.85,25.04,meters,1969-06-26,operante,operante
+83781,SAO PAULO MIR de SANTANA,Sao_Paulo,SP,Sudeste,-23.5,-46.61,792.06,meters,1945-12-01,operante,operante
+83669,SAO SIMAO,Sao_Paulo,SP,Sudeste,-21.48,-47.55,617.39,meters,1920-01-01,operante,operante
+82690,SERIDO  CAICO,Rio_Grande_do_Norte,RN,Nordeste,-6.46,-37.08,169.85,meters,1995-03-14,operante,operante
+83190,SERRINHA,Bahia,BA,Nordeste,-11.63,-38.96,359.63,meters,1904-02-01,operante,operante
+83586,SETE LAGOAS,Minas_Gerais,MG,Sudeste,-19.46,-44.25,732.00,meters,1926-05-03,operante,operante
+82392,SOBRAL,Ceara,CE,Nordeste,-3.73,-40.33,109.62,meters,1919-07-01,operante,operante
+83851,SOROCABA,Sao_Paulo,SP,Sudeste,-23.48,-47.43,645.00,meters,1928-01-01,operante,operante
+82141,SOURE,Para,PA,Norte,-0.73,-48.51,10.49,meters,1928-08-21,operante,operante
+83076,STa  R  DE CASSIA  IBIPETUBA,Bahia,BA,Nordeste,-11.01,-44.51,450.30,meters,1911-12-13,operante,operante
+82797,SURUBIM,Pernambuco,PE,Nordeste,-7.83,-35.71,418.32,meters,1929-10-01,operante,operante
+83235,TAGUATINGA,Tocantins,TO,Norte,-12.4,-46.41,603.59,meters,1915-12-22,operante,operante
+82807,TARAUACA,Acre,AC,Norte,-8.16,-70.76,190.00,meters,1966-06-06,operante,operante
+82683,TAUA,Ceara,CE,Nordeste,-6,-40.41,398.77,meters,1962-02-01,operante,operante
+82317,TEFE,Amazonas,AM,Norte,-3.83,-64.7,47.00,meters,1929-01-04,operante,operante
+82578,TERESINA,Piaui,PI,Nordeste,-5.08,-42.81,74.36,meters,1911-03-21,operante,operante
+83948,TORRES,Rio_Grande_do_Sul,RS,Sul,-29.35,-49.73,4.66,meters,1913-01-01,operante,operante
+82145,TRACUATEUA,Para,PA,Norte,-1.06,-46.9,36.00,meters,1972-09-08,operante,operante
+82789,TRIUNFO,Pernambuco,PE,Nordeste,-7.81,-38.11,1105.00,meters,1953-06-01,operante,operante
+82361,TUCURUI,Para,PA,Norte,-3.76,-49.66,40.00,meters,1970-01-01,operante,operante
+82198,TURIACU,Maranhao,MA,Nordeste,-1.56,-45.36,44.06,meters,1976-07-29,operante,operante
+83577,UBERABA,Minas_Gerais,MG,Sudeste,-19.73,-47.95,737.00,meters,1913-10-11,operante,operante
+83428,UNAI,Minas_Gerais,MG,Sudeste,-16.36,-46.88,460.00,meters,1976-04-07,operante,operante
+83927,URUGUAIANA,Rio_Grande_do_Sul,RS,Sul,-29.75,-57.08,62.31,meters,1912-02-01,operante,operante
+82870,VALE DO GURGUEIA  CRISTIANO CASTRO,Piaui,PI,Nordeste,-8.41,-43.71,265.00,meters,1978-08-01,operante,operante
+83642,VICOSA,Minas_Gerais,MG,Sudeste,-20.76,-42.86,712.20,meters,1919-10-01,operante,operante
+83648,VITORIA,Esperito_Santo,ES,Sudeste,-20.31,-40.31,36.20,meters,1923-11-20,operante,operante
+83344,VITORIA DA CONQUISTA,Bahia,BA,Nordeste,-14.88,-40.79,874.81,meters,1936-01-01,operante,operante
+83623,VOTUPORANGA,Sao_Paulo,SP,Sudeste,-20.41,-49.98,502.50,meters,1976-07-05,operante,operante
+82376,ZE DOCA,Maranhao,MA,Nordeste,-3.26,-45.65,45.28,meters,1970-08-25,operante,operante
