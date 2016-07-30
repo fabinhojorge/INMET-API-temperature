@@ -15,6 +15,22 @@ Esse projeto tem o objetivo de criar uma interface para capturar os dados da bas
 * Para fazer o login e ver os dados no site acesse [AQUI](http://www.inmet.gov.br/projetos/rede/pesquisa/inicio.php)
 
 
+## Virtual Enviroment Python
+
+A pasta **venv** é o Virtual Eviroment(_venv_) do python.
+O venv é um ambiente virtual que guarda todos os pacotes e requisitos do projeto. Abaixo segue as instruções de uso para iniciar o ambiente:
+* Abra o terminal do Sistema operacional (Linux):
+* Entre na pasta do projeto
+* Digite no terminal
+```shell
+source venv/bin/activate
+```
+* Agora use tranquilamente. Todas as chamadas de scripts usadas já estarão configuradas para usar as dependencias
+
+
+Os pacotes e dependências são para análise de dados, o chamado [SciPy](https://www.scipy.org/install.html):
+* sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
+
 ## BDMEP Parametros
 
 

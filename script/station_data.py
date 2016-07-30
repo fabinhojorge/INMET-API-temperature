@@ -198,7 +198,7 @@ def main():
 	
 	if logado:
 		
-		f = open("station_numbers.txt")
+		f = open("../dados/station_numbers.txt")
 		station_numbers = f.readlines()
 		station_list = []
 		cont = 1
@@ -213,9 +213,9 @@ def main():
 			if isinstance(e, Estacao):
 				station_list.append(e)
 
-		print station_list
+		
 
-		Estacao.exportFileCSV("estacao_dados.csv",station_list)
+		Estacao.exportFileCSV("../dados/estacao_dados2.csv",station_list)
 	
 
 
