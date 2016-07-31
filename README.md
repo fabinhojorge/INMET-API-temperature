@@ -66,6 +66,14 @@ Os pacotes e dependências são para análise de dados, o chamado [SciPy](https:
 
 
 ## Afazer
-* Lista das estações: http://www.inmet.gov.br/projetos/rede/pesquisa/lista_estacao.php -> Pegar o id delas para usar como parametro de consulta
+* Lista das estações: http://www.inmet.gov.br/projetos/rede/pesquisa/lista_estacao.php -> Pegar o id delas para usar como parametro de consulta -> Tem Estações que não estão nesa lista. Existem estações de aeroportos como a ID 82022. Checar depois em um range de 82000 até 84000. Precisa modificar um pouco para pegar os dados de aeroporto porque tem mais 1 hifen.
 * Futuramente verificar se digitou a senha certa analisando, e voltar para pedir novamente
-* Separar as classes em outros arquivos posteriormente 
+* Separar as classes em outros arquivos posteriormente
+* Criar consulta a URL diaria de todas as bases. Armazenar esses dados. Analizar a possibilidade de banco MongoDB.
+
+
+## Saiba mais
+
+* [Organização Metereológica Mundial (OMM)](https://pt.wikipedia.org/wiki/Organiza%C3%A7%C3%A3o_Meteorol%C3%B3gica_Mundial)
+* [Institudo Nacional de Metereologia (INMET)](https://pt.wikipedia.org/wiki/Instituto_Nacional_de_Meteorologia)
+* [Diferença entre as Estações de Observação](http://www.inmet.gov.br/html/rede_obs/rede_obs.html)

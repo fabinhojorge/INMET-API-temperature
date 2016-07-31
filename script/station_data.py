@@ -201,21 +201,27 @@ def main():
 		f = open("../dados/station_numbers.txt")
 		station_numbers = f.readlines()
 		station_list = []
-		cont = 1
+		cont,contOK,contERROR = 0,0,0
 
 		for station in station_numbers:
-			print str(cont)+" - "+str(station)
 			cont+=1
 			station = station.replace("\n", "")
 			url = "http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt_mensal.php?&mRelEstacao="+str(station)+"&btnProcesso=serie&mRelDtInicio=01/01/2016&mRelDtFim=20/07/2016&mAtributos=1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"
 			
 			e = getConsulta(session, url)
 			if isinstance(e, Estacao):
+				contOK+=1
+				print str(cont)+" - "+str(station)+"\t[OK]"
 				station_list.append(e)
+			else:
+				contERROR+=1
+				print str(cont)+" - "+str(station)+"\t[ERROR]"
 
-		
+		Estacao.exportFileCSV("../dados/estacao_dados.csv",station_list)
 
-		Estacao.exportFileCSV("../dados/estacao_dados2.csv",station_list)
+		print "\n\nTotal: "+str(cont)
+		print "OK: "+str(contOK)
+		print "ERROR: "+str(contERROR)
 	
 
 
