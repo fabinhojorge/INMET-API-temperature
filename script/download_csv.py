@@ -51,8 +51,13 @@ def getConsulta(session, url):
 
 	print "\n"
 
-	for i in range(len(dados_splited)):
-		dados_splited[i] = dados_splited[i][1:len(dados_splited[i])-1]
+	#Definir o cabeçalho
+	dados_splited[0] = estacao_atual.getHead()+",estacao,data,hora,temp_comp_media,umidade_relativa_media,velocidade_vento_media"
+	print "%s" % dados_splited[0]
+
+	for i in range(1, len(dados_splited)):
+		#começa no indice 6 para retirar o código da estação que ja se repete na estação. Melhorar isso depois
+		dados_splited[i] = estacao_atual.toCsvRow()+dados_splited[i][6:len(dados_splited[i])]
 		print "%s" % dados_splited[i]
 
 	print "Total: %d" % (len(dados_splited))
@@ -125,11 +130,17 @@ def main():
 	
 	if logado:
 		print "\nInforme os valores para a consulta:"
-		OMM = raw_input("Numero OMM:")
-		OMM = raw_input("Data Inicio (dd/mm/yyyy):")
-		OMM = raw_input("Data Fim (dd/mm/yyyy):")
-		url = 'http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt_mensal.php?&mRelEstacao=82487&btnProcesso=serie&mRelDtInicio=01/07/2015&mRelDtFim=25/07/2016&mAtributos=,,,,,,,,,,,,1,1,1,1'
-		#url = 'http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt.php?&mRelEstacao=82024&btnProcesso=serie&mRelDtInicio=01/01/1900&mRelDtFim=28/07/2016&mAtributos=1,1,,,1,1,,1,1,,,1,,,,,'
+		#OMM = raw_input("Numero OMM:")
+		#data_inicio = raw_input("Data Inicio (dd/mm/yyyy):")
+		#data_fim = raw_input("Data Fim (dd/mm/yyyy):")
+
+		#Estacao;Data;Hora;Temp Comp Media;Umidade Relativa Media;Velocidade do Vento Media;
+		
+		#url = "http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt.php?"
+		#atributos = "&mAtributos=,,,,,,,,,,,,,1,1,1,"
+		#url_param = "&mRelEstacao="+OMM+"&btnProcesso=serie&mRelDtInicio="+data_inicio+"&mRelDtFim="+data_fim+atributos
+		#url = url + url_param
+		url = "http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt.php?&mRelEstacao=82098&btnProcesso=serie&mRelDtInicio=01/01/2016&mRelDtFim=01/08/2016&mAtributos=,,,,,,,,,,,,,1,1,1,"
 		getConsulta(session, url)
 	
 

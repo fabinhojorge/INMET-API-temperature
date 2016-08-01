@@ -28,7 +28,7 @@ As observações ocorrem todos os dias as 0900, 1500 e 2100 (UTC-3)
 * **Dados Diarios** ([link](http://www.inmet.gov.br/projetos/rede/pesquisa/mapas_c_horario.php))
     * Dados de 3x ao dia
 * **Dados Mensais** ([link](http://www.inmet.gov.br/projetos/rede/pesquisa/form_mapas_mensal.php))
-    * Dados de 3x ao dia contendo a media diaria e mais algumas medidas [USAR]
+    * Dados de 3x ao dia contendo a media diaria e mais algumas medidas calculadas[USAR]
 * **Dados Diarios** ([link](http://www.inmet.gov.br/projetos/rede/pesquisa/form_mapas_c_diario.php))
     * Dados de 1x ao mes, com a media mensal
 * Atributos:

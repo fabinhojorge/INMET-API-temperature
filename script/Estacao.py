@@ -33,6 +33,8 @@ class Estacao:
 	"SE":{"name":"Sergipe", "region":"Nordeste"},
 	"TO":{"name":"Tocantins", "region":"Norte"},
 	}
+
+	head = "codigo_omm,station_name,state,state_initials,region,latitude,longitude,altitude,altitude_type,start_operation_date,station_situation,data_situation"
 	
 	def __init__(self, name_complete, lat, lng, alt, situation, op_date):
 
@@ -67,18 +69,19 @@ class Estacao:
 		date = "-".join(date)
 		self.op_start_date = date
 
+	def getHead(self):
+		return self.head
+
 	def toCsvRow(self):
 		row = ",".join([self.codigo_omm, self.name, self.state_name, self.state_initials, self.state_region, self.lat, self.lng, self.alt, "meters",self.op_start_date,"operante","operante"])
 		return row
 
 	@staticmethod
 	def exportFileCSV(file_name, dados):
-
-		head = "codigo_omm,station_name,state,state_initials,region,latitude,longitude,altitude,altitude_type,start_operation_date,station_situation,data_situation"
 		
 		try:
 			f = open(file_name, "w")
-			f.write(head+"\n")
+			f.write(self.getHead()+"\n")
 
 			for i in range(len(dados)):
 				f.write(dados[i].toCsvRow()+"\n")
