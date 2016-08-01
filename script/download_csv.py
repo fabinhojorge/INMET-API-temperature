@@ -4,26 +4,8 @@
 
 import requests
 import ast
+from Estacao import *
 
-class Estacao:
-	
-	def __init__(self, name, lat, lng, alt, situation, op_date):
-		self.name = name
-		self.lat = lat
-		self.lng = lng
-		self.alt = alt
-		self.situation = situation
-		self.op_date = op_date
-
-	def __str__(self):
-		s = "Estação: "+self.name+"\n" \
-		"Latitude: "+self.lat+"\n" \
-		"Longitude: "+self.lng+"\n" \
-		"Altitude: "+self.alt+"\n" \
-		"Situação: "+self.situation+"\n" \
-		"Latitude: "+self.lat+"\n" \
-		"Em operação desde "+self.op_date
-		return s
 
 def exportFileCSV(dados, file_name):
 
@@ -142,6 +124,10 @@ def main():
 	logado = login(session)
 	
 	if logado:
+		print "\nInforme os valores para a consulta:"
+		OMM = raw_input("Numero OMM:")
+		OMM = raw_input("Data Inicio (dd/mm/yyyy):")
+		OMM = raw_input("Data Fim (dd/mm/yyyy):")
 		url = 'http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt_mensal.php?&mRelEstacao=82487&btnProcesso=serie&mRelDtInicio=01/07/2015&mRelDtFim=25/07/2016&mAtributos=,,,,,,,,,,,,1,1,1,1'
 		#url = 'http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt.php?&mRelEstacao=82024&btnProcesso=serie&mRelDtInicio=01/01/1900&mRelDtFim=28/07/2016&mAtributos=1,1,,,1,1,,1,1,,,1,,,,,'
 		getConsulta(session, url)
