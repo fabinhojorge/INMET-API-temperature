@@ -52,12 +52,12 @@ def getConsulta(session, url):
 	print "\n"
 
 	#Definir o cabeçalho
-	dados_splited[0] = estacao_atual.getHead()+",estacao,data,hora,temp_comp_media,umidade_relativa_media,velocidade_vento_media"
+	dados_splited[0] = Estacao.head+",data,hora,temp_comp_media,umidade_relativa_media,velocidade_vento_media"
 	print "%s" % dados_splited[0]
 
 	for i in range(1, len(dados_splited)):
 		#começa no indice 6 para retirar o código da estação que ja se repete na estação. Melhorar isso depois
-		dados_splited[i] = estacao_atual.toCsvRow()+dados_splited[i][6:len(dados_splited[i])]
+		dados_splited[i] = estacao_atual.toCsvRow()+","+dados_splited[i][6:len(dados_splited[i])]
 		print "%s" % dados_splited[i]
 
 	print "Total: %d" % (len(dados_splited))

@@ -69,9 +69,6 @@ class Estacao:
 		date = "-".join(date)
 		self.op_start_date = date
 
-	def getHead(self):
-		return self.head
-
 	def toCsvRow(self):
 		row = ",".join([self.codigo_omm, self.name, self.state_name, self.state_initials, self.state_region, self.lat, self.lng, self.alt, "meters",self.op_start_date,"operante","operante"])
 		return row
