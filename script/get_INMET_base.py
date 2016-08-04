@@ -62,7 +62,7 @@ def getConsulta(session, url):
 	dados_final = []
 	for i in range(1, len(dados_splited)):
 		#começa no indice 6 para retirar o código da estação que ja se repete na estação. Melhorar isso depois
-		dados_final.append(estacao_atual.toCsvRow()+","+dados_splited[i][6:len(dados_splited[i])])
+		dados_final.append(estacao_atual.toCsvRow()+","+dados_splited[i][6:len(dados_splited[i])-1])
 		#print "%s" % dados_splited[i]
 
 	return dados_final
