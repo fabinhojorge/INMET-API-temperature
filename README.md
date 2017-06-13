@@ -4,8 +4,9 @@ API para dados de temperatura da Base do INMET
 
 ## Descrição
 Os dados são captados do projeto **BDMEP - Banco de Dados Meteorológicos para Ensino e Pesquisa**. 
-Esse projeto tem o objetivo de criar uma interface para capturar os dados da base de dados e exporta-los para arquivos _.csv_
-
+Este projeto visa criar uma interface que captura os dados da base do INMET e exporta-los para arquivos _.csv_
+Os dados do BDMEP são dados históricos e não em tempo real, ou seja, as vezes só estão disponiveis dados anteriores a 1~3 meses
+Um pré requisito para acessar a base é ter cadastro no BDMEP. Veja a sessão de links abaixo.
 
 ## Links
 
@@ -17,7 +18,7 @@ Esse projeto tem o objetivo de criar uma interface para capturar os dados da bas
 
 ## BDMEP Parametros
 
-### Importante observar [esse documento](http://www.inmet.gov.br/webcdp/climatologia/normais/imagens/normais/textos/metodologia.pdf)
+### Importante observar [esse documento](http://www.inmet.gov.br/webcdp/climatologia/normais/imagens/normais/textos/metodologia.pdf) que explica a metodologia utilizada para consturir a base.
 
 ### Importante observar [Essa publicação sobre medias diarias](http://www.cbmet.com/cbm-files/13-9060ba328e42e419c5472c95d37020ec.pdf)
 * A formula usada para o calcul é: TC = ( T12 + 2*T0 + T_(min) + T_(max) ) / 5
@@ -65,8 +66,9 @@ As observações ocorrem todos os dias as 0900, 1500 e 2100 (UTC-3)
 ## Afazer
 * Lista das estações: http://www.inmet.gov.br/projetos/rede/pesquisa/lista_estacao.php -> Pegar o id delas para usar como parametro de consulta -> Tem Estações que não estão nessa lista. Existem estações de aeroportos como a ID 82022. Checar depois em um range de 82000 até 84000. Precisa modificar um pouco para pegar os dados de aeroporto porque tem mais 1 hifen.
 * Futuramente verificar se digitou a senha certa analisando, e voltar para pedir novamente
-* Separar as classes em outros arquivos posteriormente
+* Separar as classes em outros arquivos
 * Criar consulta a URL diaria de todas as bases. Armazenar esses dados. Analizar a possibilidade de banco MongoDB.
+* Criar Delay entre cada request para não ser bloqueado pelo firewall
 
 
 ## Saiba mais
