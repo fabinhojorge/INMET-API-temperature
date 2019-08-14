@@ -1,11 +1,15 @@
-# INMET-API-temperatura
-API para dados de temperatura da Base do INMET
 
+_Este projeto esta em fase de refatoração. Será alterado para Python 3 e criado um crawler usando Selenium_
+
+
+# INMET-API-temperatura
+API para extrair os dados __históricos__ de temperatura da Base do INMET
 
 ## Descrição
-Os dados são captados do projeto **BDMEP - Banco de Dados Meteorológicos para Ensino e Pesquisa**. 
-Este projeto visa criar uma interface que captura os dados da base do INMET e exporta-los para arquivos _.csv_
-Os dados do BDMEP são dados históricos e não em tempo real, ou seja, as vezes só estão disponiveis dados anteriores a 1~3 meses
+Os dados são da base __BDMEP - Banco de Dados Meteorológicos para Ensino e Pesquisa__. São dados históricos, a partir de 1961 extraidos de estações __convencionais__ ([link](http://www.inmet.gov.br/portal/index.php?r=bdmep/bdmep)).
+
+Os dados do BDMEP são dados históricos e não em tempo real, ou seja, as vezes só estão disponíveis dados anteriores a 1~3 meses.
+
 Um pré requisito para acessar a base é ter cadastro no BDMEP. Veja a sessão de links abaixo.
 
 ## Links
@@ -14,30 +18,56 @@ Um pré requisito para acessar a base é ter cadastro no BDMEP. Veja a sessão d
 * Pagina dos dados [BDMEP](http://www.inmet.gov.br/portal/index.php?r=bdmep/bdmep)
 * Caso ainda não possua cadastro para consulta da base BDMEP, acesse [AQUI](http://www.inmet.gov.br/projetos/rede/pesquisa/cad_senha.php)
 * Para fazer o login e ver os dados no site acesse [AQUI](http://www.inmet.gov.br/projetos/rede/pesquisa/inicio.php)
+* Tabela de código de ventos [AQUI](http://www.inmet.gov.br/projetos/rede/pesquisa/tabela_de_codigos.html)
+* Lista de estações [AQUI] (http://www.inmet.gov.br/projetos/rede/pesquisa/lista_estacao.php)
+
+## Como executar o projeto?
+
+_--TBD--_
+
+## Sobre o BDMEP
+
+### Detalhes importantes 
+
+Um detalhe importante é que a base do BDMEP são dados de estações __"Convencionais"__. Existem dois tipos de estações:
+* __Convêncional__: É composta de vários sensores isolados que registram continuamente os parâmetros meteorológicos (pressão, temperatura, etc..), que são lidos e anotados por um observador (humano ou sistema) a cada intervalo de tempo ([link](http://www.inmet.gov.br/portal/index.php?r=estacoes/estacoesConvencionais)). 
+* __Automática__: É composta de uma unidade de memória central ("data logger"), ligada a vários sensores meteorológicos, e que integra os valores observados minuto a minuto e os disponibiliza automaticamente a cada hora ([link](http://www.inmet.gov.br/portal/index.php?r=estacoes/estacoesAutomaticas)).
 
 
-## BDMEP Parametros
+Então, para neste projeto estamos usando os dados Convêncionais.
 
-### Importante observar [esse documento](http://www.inmet.gov.br/webcdp/climatologia/normais/imagens/normais/textos/metodologia.pdf) que explica a metodologia utilizada para consturir a base.
+As observações ocorrem todos os dias as 0900, 1500 e 2100 (UTC-3).
+ 
+A formula usada para o cálculo da Temperatura média compensada (TC) é:
+ 
+    TC = ( T12 + 2*T0 + T_(min) + T_(max) ) / 5
 
-### Importante observar [Essa publicação sobre medias diarias](http://www.cbmet.com/cbm-files/13-9060ba328e42e419c5472c95d37020ec.pdf)
-* A formula usada para o calcul é: TC = ( T12 + 2*T0 + T_(min) + T_(max) ) / 5
-
-As observações ocorrem todos os dias as 0900, 1500 e 2100 (UTC-3)
 
 
-* **Dados Diarios** ([link](http://www.inmet.gov.br/projetos/rede/pesquisa/mapas_c_horario.php))
+### Documentos Importantes
+* [Esse documento](http://www.inmet.gov.br/webcdp/climatologia/normais/imagens/normais/textos/metodologia.pdf) que explica a metodologia utilizada para construir a base.
+
+* [Essa publicação sobre medias diarias](./documentos/Comparação%20de%20médias%20diarias%20de%20temperatura.pdf) e Temperatura média compensada 
+
+
+
+### Parâmetros 
+
+* __Dados Horários__ ([link](http://www.inmet.gov.br/projetos/rede/pesquisa/form_mapas_c_horario.php))
     * Dados de 3x ao dia
-* **Dados Mensais** ([link](http://www.inmet.gov.br/projetos/rede/pesquisa/form_mapas_mensal.php))
-    * Dados de 3x ao dia contendo a media diaria e mais algumas medidas calculadas[USAR]
-* **Dados Diarios** ([link](http://www.inmet.gov.br/projetos/rede/pesquisa/form_mapas_c_diario.php))
+
+* __Dados Diários__ ([link](http://www.inmet.gov.br/projetos/rede/pesquisa/form_mapas_c_diario.php))
+    * Dados de 3x ao dia contendo a media diaria e mais algumas medidas calculadas
+
+* __Dados Mensais__ ([link](http://www.inmet.gov.br/projetos/rede/pesquisa/form_mapas_mensal.php))
     * Dados de 1x ao mes, com a media mensal
-* Atributos:
+
+* __Atributos__:
     1. mRelEstacao
     1. btnProcesso
     1. mRelDtInicio
     1. mRelDtFim
-    1. mAtributos=,,,,,,,,,,,,,,,, -> Conjunto de atributos separados por virgula. Se tiver o atributo então recebe o valor 1, se não fica vazio. Lista de atributos:
+    1. mAtributos=,,,,,,,,,,,,,,,, -> Conjunto de atributos separados por virgula. Se tiver o atributo então recebe o valor 1, se não fica vazio (ex: mAtributos=1,1,1,,,,,,,,,,1,1,,,). Lista de atributos:
         2. 1º Direção do Vento Predominante ([tabela](http://www.inmet.gov.br/projetos/rede/pesquisa/tabela_de_codigos.html))
         2. 2º Velocidade do Vento Média (mps)
         2. 3º Velocidade do Vento Máxima Média (mps)
@@ -60,15 +90,14 @@ As observações ocorrem todos os dias as 0900, 1500 e 2100 (UTC-3)
     * [Bulbo Umido](https://pt.wikipedia.org/wiki/Temperatura_de_bulbo_%C3%BAmido)
     * [Bulbo Seco](https://es.wikipedia.org/wiki/Temperatura_de_bulbo_seco)
 
-** Precisa terminar essa documentação
 
 
-## Afazer
-* Lista das estações: http://www.inmet.gov.br/projetos/rede/pesquisa/lista_estacao.php -> Pegar o id delas para usar como parametro de consulta -> Tem Estações que não estão nessa lista. Existem estações de aeroportos como a ID 82022. Checar depois em um range de 82000 até 84000. Precisa modificar um pouco para pegar os dados de aeroporto porque tem mais 1 hifen.
-* Futuramente verificar se digitou a senha certa analisando, e voltar para pedir novamente
-* Separar as classes em outros arquivos
-* Criar consulta a URL diaria de todas as bases. Armazenar esses dados. Analizar a possibilidade de banco MongoDB.
-* Criar Delay entre cada request para não ser bloqueado pelo firewall
+
+
+## TO DO
+* [ ] Lista das estações: http://www.inmet.gov.br/projetos/rede/pesquisa/lista_estacao.php -> Pegar o id delas para usar como parametro de consulta -> Tem Estações que não estão nessa lista. Existem estações de aeroportos como a ID 82022. Checar depois em um range de 82000 até 84000. Precisa modificar um pouco para pegar os dados de aeroporto porque tem mais 1 hifen.
+
+* [ ] 
 
 
 ## Saiba mais
