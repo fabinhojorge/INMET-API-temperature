@@ -19,7 +19,7 @@ Um pré requisito para acessar a base é ter cadastro no BDMEP. Veja a sessão d
 * Caso ainda não possua cadastro para consulta da base BDMEP, acesse [AQUI](http://www.inmet.gov.br/projetos/rede/pesquisa/cad_senha.php)
 * Para fazer o login e ver os dados no site acesse [AQUI](http://www.inmet.gov.br/projetos/rede/pesquisa/inicio.php)
 * Tabela de código de ventos [AQUI](http://www.inmet.gov.br/projetos/rede/pesquisa/tabela_de_codigos.html)
-* Lista de estações [AQUI] (http://www.inmet.gov.br/projetos/rede/pesquisa/lista_estacao.php)
+* Lista de estações [AQUI](http://www.inmet.gov.br/projetos/rede/pesquisa/lista_estacao.php)
 
 ## Como executar o projeto?
 
@@ -47,7 +47,7 @@ A formula usada para o cálculo da Temperatura média compensada (TC) é:
 ### Documentos Importantes
 * [Esse documento](http://www.inmet.gov.br/webcdp/climatologia/normais/imagens/normais/textos/metodologia.pdf) que explica a metodologia utilizada para construir a base.
 
-* [Essa publicação sobre medias diarias](./documentos/Comparação%20de%20médias%20diarias%20de%20temperatura.pdf) e Temperatura média compensada 
+* [Essa publicação sobre medias diarias](./documents/Comparação%20de%20médias%20diarias%20de%20temperatura.pdf) e Temperatura média compensada 
 
 
 
@@ -63,28 +63,28 @@ A formula usada para o cálculo da Temperatura média compensada (TC) é:
     * Dados de 1x ao mes, com a media mensal
 
 * __Atributos__:
-    1. mRelEstacao
-    1. btnProcesso
-    1. mRelDtInicio
-    1. mRelDtFim
-    1. mAtributos=,,,,,,,,,,,,,,,, -> Conjunto de atributos separados por virgula. Se tiver o atributo então recebe o valor 1, se não fica vazio (ex: mAtributos=1,1,1,,,,,,,,,,1,1,,,). Lista de atributos:
-        2. 1º Direção do Vento Predominante ([tabela](http://www.inmet.gov.br/projetos/rede/pesquisa/tabela_de_codigos.html))
-        2. 2º Velocidade do Vento Média (mps)
-        2. 3º Velocidade do Vento Máxima Média (mps)
-        2. 4º Evaporação do Piche (mm)
-        2. 5º Evapotranspiração Potencial BH (mm)
-        2. 6º Evapotranspiração Real BH (mm)
-        2. 7º Insolação Total (hs)
-        2. 8º Nebulosidade Média (décimos)
-        2. 9º Número de Dias com Precipitação (qtd)
-        2. 10º Precipitação Total (mm)
-        2. 11º Pressão Atm nível Mar Média (mbar)
-        2. 12º Pressão Atm Média (mbar)
-        2. 13º Temp Máxima Média(ºC)
-        2. 14º Temp Compensada Média(ºC)
-        2. 15º Temp Mínima Média(ºC)
-        2. 16º Umidade Relativa Média (%)
-        2. 17º Visibilidade Média (%)([tabela](http://www.inmet.gov.br/projetos/rede/pesquisa/tabela_visibilidade.html))
+    * mRelEstacao
+    * btnProcesso
+    * mRelDtInicio
+    * mRelDtFim
+    * mAtributos=,,,,,,,,,,,,,,,, -> Conjunto de atributos separados por virgula. Se tiver o atributo então recebe o valor 1, se não fica vazio (ex: mAtributos=1,1,1,,,,,,,,,,1,1,,,). Lista de atributos:
+        * 1º Direção do Vento Predominante ([tabela](http://www.inmet.gov.br/projetos/rede/pesquisa/tabela_de_codigos.html))
+        * 2º Velocidade do Vento Média (mps)
+        * 3º Velocidade do Vento Máxima Média (mps)
+        * 4º Evaporação do Piche (mm)
+        * 5º Evapotranspiração Potencial BH (mm)
+        * 6º Evapotranspiração Real BH (mm)
+        * 7º Insolação Total (hs)
+        * 8º Nebulosidade Média (décimos)
+        * 9º Número de Dias com Precipitação (qtd)
+        * 10º Precipitação Total (mm)
+        * 11º Pressão Atm nível Mar Média (mbar)
+        * 12º Pressão Atm Média (mbar)
+        * 13º Temp Máxima Média(ºC)
+        * 14º Temp Compensada Média(ºC)
+        * 15º Temp Mínima Média(ºC)
+        * 16º Umidade Relativa Média (%)
+        * 17º Visibilidade Média (%)([tabela](http://www.inmet.gov.br/projetos/rede/pesquisa/tabela_visibilidade.html))
 
 * Informações sobre os parametros:
     * [Bulbo Umido](https://pt.wikipedia.org/wiki/Temperatura_de_bulbo_%C3%BAmido)
@@ -97,7 +97,6 @@ A formula usada para o cálculo da Temperatura média compensada (TC) é:
 ## TO DO
 * [ ] Lista das estações: http://www.inmet.gov.br/projetos/rede/pesquisa/lista_estacao.php -> Pegar o id delas para usar como parametro de consulta -> Tem Estações que não estão nessa lista. Existem estações de aeroportos como a ID 82022. Checar depois em um range de 82000 até 84000. Precisa modificar um pouco para pegar os dados de aeroporto porque tem mais 1 hifen.
 
-* [ ] 
 
 
 ## Saiba mais
