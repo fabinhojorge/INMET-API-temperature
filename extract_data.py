@@ -29,7 +29,7 @@ def get_page(_driver, _url):
     """Helper function that navigates and returns an BeautifulSoup page."""
     _driver.get(_url)
     time.sleep(3)
-    return BeautifulSoup(driver.page_source, 'html.parser')
+    return BeautifulSoup(_driver.page_source, 'html.parser')
 
 
 def load_station_numbers(_path):
