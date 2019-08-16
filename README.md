@@ -96,7 +96,9 @@ A formula usada para o cálculo da Temperatura média compensada (TC) é:
 
 ## TO DO
 * [ ] Lista das estações: http://www.inmet.gov.br/projetos/rede/pesquisa/lista_estacao.php -> Pegar o id delas para usar como parametro de consulta -> Tem Estações que não estão nessa lista. Existem estações de aeroportos como a ID 82022. Checar depois em um range de 82000 até 84000. Precisa modificar um pouco para pegar os dados de aeroporto porque tem mais 1 hifen.
-
+* [ ] Tratamento para login com usuario errado.
+* [ ] Exportar para arquivo
+* [ ] Criar classe observation 
 
 
 ## Saiba mais

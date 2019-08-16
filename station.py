@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from .state import State
+from state import State
 
 
 class Station:
@@ -20,5 +20,5 @@ class Station:
 		self.op_start_date = op_date
 
 	def __str__(self):
-		return "Estação: {0}\nLatitude: {1}\nLongitude: {2}\nAltitude: {3}\nSituação: {4}\nEm operação desde {0}"\
-			.format(self.name, self.omm_code, self.lat, self.lng, self.alt, self.situation, self.op_start_date)
+		return "Estação: {0}\nLatitude: {1}\nLongitude: {2}\nAltitude: {3}\nSituação: {4}\nEm operação desde {5}"\
+			.format(self.name, self.lat, self.lng, self.alt, self.situation, self.op_start_date)
