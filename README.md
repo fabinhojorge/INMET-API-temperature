@@ -1,7 +1,3 @@
-
-_Este projeto esta em fase de refatoração. Será alterado para Python 3 e criado um crawler usando Selenium_
-
-
 # INMET-API-temperatura
 API para extrair os dados __históricos__ de temperatura da Base do INMET
 
@@ -23,7 +19,39 @@ Um pré requisito para acessar a base é ter cadastro no BDMEP. Veja a sessão d
 
 ## Como executar o projeto?
 
-_--TBD--_
+### Requerimentos
+* Python 3
+* Selenium
+* Selenium web driver (chromedriver.exe ou outro se [sua escolha](https://www.seleniumhq.org/download/#thirdPartyDrivers))
+* Beautiful Soup4
+
+### Instalação
+* Instale Git e faça o download deste projeto ([para Windows](https://gitforwindows.org/))
+* Instale Python 3
+* Na linha de comando, crie um VirtualEnv para seu codigo python: ```> python -m venv venv```
+* Inicie seu virtualEnv com: ```> venv\Scripts\activate```
+    * Se precisar desativar é só ```> venv\Scripts\deactivate```
+* Após criar o VirtualEnv e inicia-lo, vamos agora instalar as dependencias deste projeto. Para isso use:
+    
+    ```> pip install -r requirements.txt```
+* Pronto, tudo certinho para executar o projeto :)
+
+### Executando o projeto
+* A base do BDMEP possui varios tipo de consultas. Para facilitar o uso, foram criados alguns Templates:
+    * __HOUR__ | Consulta de apenas alguns parametros e 3x ao dia
+    * __DAY__ | Consulta de apenas alguns parametros e 2x ao dia
+    * __DAYFULL__ | Consulta de todos os parametros e 3x ao dia
+    * __MONTH__ | Consulta de todos os parametros e 1x ao mes
+
+_*Recomendo utilizar ou o Template __DAYFULL__, pois é o que aparenta estar mais completo._
+
+* Para executar use o comando abaixo:
+
+```> python extract_data.py DAYFULL```
+
+* O arquivo será gerado em ``` data/output_data.csv ```
+
+_*Por enquanto não foi adicionado nem a opção de data nem a opção de nome do arquivo. Para alterar a data de extraão edite a linha 94 do extract_data.py_
 
 ## Sobre o BDMEP
 
@@ -95,10 +123,10 @@ A formula usada para o cálculo da Temperatura média compensada (TC) é:
 
 
 ## TO DO
-* [ ] Lista das estações: http://www.inmet.gov.br/projetos/rede/pesquisa/lista_estacao.php -> Pegar o id delas para usar como parametro de consulta -> Tem Estações que não estão nessa lista. Existem estações de aeroportos como a ID 82022. Checar depois em um range de 82000 até 84000. Precisa modificar um pouco para pegar os dados de aeroporto porque tem mais 1 hifen.
 * [ ] Tratamento para login com usuario errado.
-* [ ] Exportar para arquivo
-* [ ] Criar classe observation 
+* [X] Exportar para arquivo
+* [ ] Adicionar input para data
+ 
 
 
 ## Saiba mais
