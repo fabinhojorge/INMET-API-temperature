@@ -7,13 +7,19 @@ Email: fabinhojorgenet@gmail.com
 Description: Web Crawler to extract information from BDMEP (INMET) database.
 """
 
+import time
+import sys
+import csv
 from selenium import webdriver
 from bs4 import BeautifulSoup
-import time
-from config import LOGIN
+from config import LOGIN, URL_TEMPLATE
 from datetime import datetime
 from station import Station
-# import csv
+
+
+class InputError(Exception):
+    """Exception raised for errors in the input."""
+    pass
 
 
 def init_webdriver_config(impl_delay=30):
@@ -30,7 +36,7 @@ def init_webdriver_config(impl_delay=30):
 def get_page(_driver, _url):
     """Helper function that navigates and returns an BeautifulSoup page."""
     _driver.get(_url)
-    time.sleep(3)
+    time.sleep(5)
     return BeautifulSoup(_driver.page_source, 'html.parser')
 
 
@@ -44,73 +50,97 @@ def inmet_login(_driver):
     _driver.find_element_by_name("btnProcesso").click()
 
 
+def get_url_pattern():
+    """This function returns the URL pattern accordingly to the Template passed as system parameter."""
+
+    if len(sys.argv) > 1:
+        if sys.argv[1].upper() in URL_TEMPLATE.keys():
+            print('TEMPLATE: ', sys.argv[1].upper())
+            return URL_TEMPLATE[sys.argv[1].upper()]
+        else:
+            raise InputError('The template {0} don´t exist.'.format(sys.argv[1].upper()))
+
+    print('TEMPLATE Default: MONTH')
+    return URL_TEMPLATE['MONTH']
+
+
 def load_station_numbers(_path):
     """It returns the list of stations."""
-    _f = open(_path)
-    _station_numbers = _f.readlines()
-    _station_numbers = list(map(lambda x: x.replace("\n", ""), _station_numbers))
-    _f.close()
+
+    with open(_path) as _file:
+        _station_numbers = _file.readlines()
+        _station_numbers = list(map(lambda x: x.replace("\n", ""), _station_numbers))
+
     return _station_numbers
 
 
-def weather_station_parser(_data):
+if __name__ == '__main__':
 
-    ds = _data.split('\n')
-    s = Station(ds[1][20:], ds[2][20:], ds[3][20:], ds[4][20:], ds[5], ds[6][20:])
-    print(s)
-    return s
+    print(">> WebCrawler Started <<")
 
+    count_success = 0
+    count_error = 0
+    station_list = []
 
-def weather_observation_parser(_data):
-    ds = _data.split('\n')
-    ds = list(filter(None, ds))
-    # header is ds[0]
-    print(ds[0])
-    print(*ds[1:], sep='\n')
+    driver = init_webdriver_config(30)
 
+    try:
+        inmet_login(driver)
 
-# if __name__ == '__main__':
+        url_pattern = get_url_pattern()
 
-print(">> WebCrawler Started <<")
+        station_numbers = load_station_numbers("./data/station_numbers.txt")
 
-driver = init_webdriver_config(30)
+        start_date = "01/01/2018"
+        end_date = datetime.now().strftime("%d/%m/%Y")
 
-# -- Login --
-inmet_login(driver)
+        for omm_code in station_numbers:
+            url = url_pattern.format(omm_code=omm_code, start_date=start_date, end_date=end_date)
+            soup = get_page(driver, url)
 
+            soup_pre = soup.select('pre')
 
-# -- Extract --
-url_pattern = "http://www.inmet.gov.br/projetos/rede/pesquisa/gera_serie_txt_mensal.php?&mRelEstacao={omm_code}" \
-      "&btnProcesso=serie&mRelDtInicio={start_date}&mRelDtFim={end_date}&mAtributos={attributes}"
+            if len(soup_pre) == 0:  # In case of an exception go to the next station
+                continue
 
-station_numbers = load_station_numbers("./data/station_numbers.txt")
+            if 'Não existem dados disponiveis' in soup_pre[0].text:
+                count_error += 1
+            else:
+                content = soup_pre[0].text.split('--------------------')
+                station = Station.parser(content[2])
+                station.set_observation(Station.observation_parser(content[4]))
+                station_list.append(station)
+                count_success += 1
 
-start_date = "01/07/2000"
-end_date = datetime.now().strftime("%d/%m/%Y")
-# attributes = "1,,,,,,,,,,,,1,1,1,1,"
-attributes = "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"
+    except InputError as e:
+        print(e)
+    except Exception as e:
+        print(e)
+    finally:
+        driver.quit()
+        print(">> WebCrawler Finished <<")
+        print("SUCCESS: {0}\nERROR: {1}\nTOTAL: {2}".format(count_success, count_error, count_success + count_error))
 
-count_success = 0
-count_error = 0
+    if len(station_list) == 0:
+        print('No data collected. Exiting...')
+        exit()
 
-for omm_code in station_numbers[:4]:
-    url = url_pattern.format(omm_code=omm_code, start_date=start_date, end_date=end_date, attributes=attributes)
-    soup = get_page(driver, url)
+    print(">> Data Processing Started <<")
 
-    soup_pre = soup.select('pre')
+    data_header = list(filter(None, station_list[0].weather_observation_header.split(';')))
+    header = Station.get_station_header() + data_header
 
-    if 'Não existem dados disponiveis' in soup_pre[0].text:
-        count_error += 1
-    else:
-        count_success += 1
-        content = soup_pre[0].text.split('--------------------')
+    file_path = 'data/output_data.csv'
+    with open(file_path, 'w', newline='\n', encoding='utf-8') as f:
+        writer = csv.writer(f, delimiter=';', quotechar="'", quoting=csv.QUOTE_MINIMAL)
 
-        station = weather_station_parser(content[2])
-        weather_observation_parser(content[4])
+        writer.writerow(header)
 
+        for station in station_list:
+            for ob in station.weather_observation:
+                row = station.get_station_information() + ob.split(';')
+                writer.writerow(row)
 
-# driver.quit()
+        print('Saving the file {0} [...]'.format(file_path))
 
-print(">> WebCrawler Finished <<")
-print("SUCCESS: {0}\nERROR: {1}\nTOTAL: {2}".format(count_success, count_error,
-                                                    count_success + count_error))
+    print(">> Data Processing Finished <<")
